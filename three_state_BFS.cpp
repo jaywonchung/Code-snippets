@@ -9,12 +9,12 @@ int main()
 	q.emplace(0, 0, 0);
 	
 	while (!q.empty()) {
-		int dist, node, prev;
-		tie(dist, node, prev) = q.front(); q.pop();
+		int one, two, three;
+		tie(one, two, three) = q.front(); q.pop();
 		
 		//find next state
 		
-		q.emplace(new_dist, new_node, node);
+		q.emplace(new_one, new_two, new_three);
 	}
 	
 	return 0;
