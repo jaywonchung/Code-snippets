@@ -2,6 +2,6 @@
 
 <This repository isn't complete yet!>
 
-C++ Code snippets for algorithm problem-solving.
+C++ code snippets for solving algorithm problems.
 
-Includes classes, functions, macros, tricks, and shortcuts that are often used in coding.
+Includes classes, functions, macros, tricks, and shortcuts often used in problem-solving.
