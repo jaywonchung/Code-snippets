@@ -28,7 +28,6 @@ void update(int node, int start, int end, int index, int value) {
     if (index<start || end<index) return;
     if (start==end) {
         tree[node] = value;
-        return;
     } else {
         update(2*node, start, (start+end)/2, index, value);
         update(2*node+1, (start+end)/2+1, end, index, value);
