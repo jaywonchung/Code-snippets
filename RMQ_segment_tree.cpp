@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <cmath>
 using namespace std;
 
 vector<int> a, tree;
@@ -38,9 +39,12 @@ void update(int node, int start, int end, int index, int value) {
 int main()
 {
     int n; scanf("%d", &n);
+    int h = (int)ceil(log2(n));
+    int tree_size = (1<<(h+1))-1;
     
+    // allocate memory
     a.assign(n, 0);
-    tree.assign(4*n, 0);    //typically 4*n is enough
+    tree.assign(tree_size, 0);
     
     // get list of integers
     for (int i=0; i<n; ++i) {
