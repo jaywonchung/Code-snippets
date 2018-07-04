@@ -27,7 +27,7 @@ void update_lazy(int node, int start, int end) {
 }
 
 void update_range(int node, int start, int end, int i, int j, long long dif) {
-    update_lazy(node, start, end);
+    update_lazy(node, start, end);  // first apply changes postponed by lazy propagation. the node is now up to date.
     if (i>end || j<start) {
         return;
     }
@@ -45,7 +45,7 @@ void update_range(int node, int start, int end, int i, int j, long long dif) {
 }
 
 long long query(int node, int start, int end, int i, int j) {
-    update_lazy(node, start, end);
+    update_lazy(node, start, end);  // first apply changes postponed by lazy propagation. the node is now up to date.
     if (i>end || j<start) return 0;
     if (i<=start && end<=j) return tree[node];
     return query(2*node, start, (start+end)/2, i, j) + query(2*node+1, (start+end)/2+1, end, i, j);
