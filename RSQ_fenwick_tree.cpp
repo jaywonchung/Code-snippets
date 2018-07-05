@@ -34,7 +34,7 @@ int main()
 		update(i, a[i]);
 	}
 	
-	//add diff to all elements from a[0] to a[i]
+	//add diff to a[i]
 	update(i, diff);
 	
 	//get sum of all elements from a[0] to a[i];
