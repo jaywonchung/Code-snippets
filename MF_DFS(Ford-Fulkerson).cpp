@@ -73,7 +73,8 @@ int main()
         mf.add_edge(v, u, cap);
     }
     
-    // print maximum flow from source to sink
+    // calculate maximum flow from source to sink
+    // time complexity is O(fE), where f is the number of DFS's performed and E is the number of graph edges
     cout << mf.flow() << '\n';
     
     return 0;
