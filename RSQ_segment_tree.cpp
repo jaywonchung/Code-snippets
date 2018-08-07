@@ -55,7 +55,7 @@ int main()
 {
     int n; scanf("%d", &n);
     int h = (int)ceil(log2(n));
-    int tree_size = (1<<(h+1))-1;
+    int tree_size = 1<<(h+1);
     
     // allocate memory
     a.assign(n, 0);
