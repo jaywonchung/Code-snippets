@@ -11,7 +11,7 @@ int Find(int x) {
 }
 
 int Union(int x, int y) {
-    parent[Find[x]] = Find(y);
+    parent[Find(x)] = Find(y);
 }
 
 int main()
