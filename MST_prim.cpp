@@ -7,6 +7,7 @@ using namespace std;
 bool check[1001];   // true if vertex i is in MST
 vector<pair<int, int>> graph[1001];
 
+// O(ElogE)
 int prim(int n) {
     priority_queue<tuple<int, int, int>> q; // -cost, from, to
     
