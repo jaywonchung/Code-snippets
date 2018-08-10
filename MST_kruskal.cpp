@@ -36,6 +36,7 @@ int main()
         parent[i] = i;
     }
     
+    // O(ElogE)
     int ans = 0;
     for (int i=0; i<m; ++i) {
         int c, s, e;
