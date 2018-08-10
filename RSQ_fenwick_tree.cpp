@@ -29,7 +29,7 @@ int main()
 	vector<int> a(n+1);
 	
 	//get lsit of integers and initialize fenwick tree
-	for (int i=0; i<n; ++i) {
+	for (int i=1; i<=n; ++i) {
 		scanf("%d", &a[i]);
 		update(i, a[i]);
 	}
