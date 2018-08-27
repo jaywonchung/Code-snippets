@@ -7,6 +7,7 @@ int dist[501];  // distance from start node
 const int inf = 1e9;
 vector<tuple<int, int, int>> edges;
 
+// O(VE)
 bool bf(int n) {
     for (int i=2; i<=n; ++i) {
         dist[i] = inf;
