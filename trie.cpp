@@ -52,6 +52,7 @@ int main()
     Trie trie;
     
     // add string to trie
+    // only lowercase alphabets allowed
     trie.add("string");
     
     // search for string in trie
